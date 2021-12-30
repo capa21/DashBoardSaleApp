@@ -1,0 +1,137 @@
+[
+    {
+        "id_shop": 80001,
+        "currency": "Peso mexicano",
+        "language": "Spanish",
+        "country": "Mexico",
+        "email": "pruebafront_1@gmail.com",
+        "name": "Mega Tiendas",
+        "id_account":777
+    },
+    {
+      "id_shop": 80002,
+      "currency": "Peso mexicano",
+      "language": "Spanish",
+      "country": "Mexico",
+      "email": "pruebafront_1@gmail.com",
+      "name": "Mega Tiendas 2",
+      "id_account": 777
+    },
+    {
+      "id_shop": 80003,
+      "currency": "Peso mexicano",
+      "language": "Spanish",
+      "country": "Mexico",
+      "email": "pruebafront_1@gmail.com",
+      "name": "Mega Tiendas 3",
+      "id_account": 777
+    },
+    {
+      "id_shop": 80004,
+      "currency": "Peso mexicano",
+      "language": "Spanish",
+      "country": "Mexico",
+      "email": "pruebafront_1@gmail.com",
+      "name": "Tiendas D1",
+      "id_account": 1
+    },
+    {
+      "id_shop": 80005,
+      "currency": "Peso mexicano",
+      "language": "Spanish",
+      "country": "Mexico",
+      "email": "pruebafront_1@gmail.com",
+      "name": "Tiendas D1 II",
+      "id_account": 1
+    },
+    {
+      "id_shop": 80006,
+      "currency": "Peso mexicano",
+      "language": "Spanish",
+      "country": "Mexico",
+      "email": "pruebafront_1@gmail.com",
+      "name": "Tiendas D1 III",
+      "id_account": 1
+    },
+    {
+      "id_shop": 80008,
+      "currency": "Peso mexicano",
+      "language": "Spanish",
+      "country": "Mexico",
+      "email": "pruebafront_1@gmail.com",
+      "name": "Tiendas Edelis Store I",
+      "id_account": 2
+    },
+    {
+      "id_shop": 80009,
+      "currency": "Peso mexicano",
+      "language": "Spanish",
+      "country": "Mexico",
+      "email": "pruebafront_1@gmail.com",
+      "name": "Tiendas Edelis Store II",
+      "id_account": 2
+    },
+    {
+      "id_shop": 80010,
+      "currency": "Peso mexicano",
+      "language": "Spanish",
+      "country": "Mexico",
+      "email": "pruebafront_1@gmail.com",
+      "name": "Tiendas Edelis Store III",
+      "id_account": 2
+    },
+    {
+      "id_shop": 80011,
+      "currency": "Peso mexicano",
+      "language": "Spanish",
+      "country": "Mexico",
+      "email": "pruebafront_1@gmail.com",
+      "name": "Tiendas EDTeam I",
+      "id_account": 3
+    },
+    {
+      "id_shop": 80012,
+      "currency": "Peso mexicano",
+      "language": "Spanish",
+      "country": "Mexico",
+      "email": "pruebafront_1@gmail.com",
+      "name": "Tiendas EDTeam II",
+      "id_account": 3
+    },
+    {
+      "id_shop": 80013,
+      "currency": "Peso mexicano",
+      "language": "Spanish",
+      "country": "Mexico",
+      "email": "pruebafront_1@gmail.com",
+      "name": "Tiendas EDTeam III",
+      "id_account": 3
+    },
+    {
+      "id_shop": 80014,
+      "currency": "Peso mexicano",
+      "language": "Spanish",
+      "country": "Mexico",
+      "email": "pruebafront_1@gmail.com",
+      "name": "Tiendas La Mejor 10 I",
+      "id_account": 4
+    },
+    {
+      "id_shop": 80015,
+      "currency": "Peso mexicano",
+      "language": "Spanish",
+      "country": "Mexico",
+      "email": "pruebafront_1@gmail.com",
+      "name": "Tiendas La Mejor 10 II",
+      "id_account": 4
+    },
+    {
+      "id_shop": 80007,
+      "currency": "Peso mexicano",
+      "language": "Spanish",
+      "country": "Mexico",
+      "email": "pruebafront_1@gmail.com",
+      "name": "Tiendas La Mejor 10 III",
+      "id_account": 4
+    }
+]

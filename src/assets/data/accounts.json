@@ -1,0 +1,31 @@
+{
+    "accounts": {
+        "current": {
+            "name": "MegaTiend1015",
+            "id_account": 777
+        },
+        "others": [
+            {
+
+                "name": "TD1Price",
+                "favorite": false,
+                "id_account": 1
+            },
+            {
+                "name": "EDStore",
+                "favorite": false,
+                "id_account": 2
+            },
+            {
+              "name": "EdStoreII",
+              "favorite": false,
+              "id_account": 3
+            },
+            {
+              "name": "TLMejor10",
+              "favorite": false,
+              "id_account": 4
+            }
+        ]
+    }
+}

@@ -1,0 +1,4 @@
+<select class="custom-select" (change)="changeAccount()" [formControl]="accountSelected">
+  <option selected [value]="accounts.current.id_account">{{accounts.current.name}} </option>
+  <option *ngFor="let account of accounts.others" [value]="account.id_account">{{account.name}}</option>
+</select>
