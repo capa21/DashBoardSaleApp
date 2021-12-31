@@ -12,22 +12,24 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { AccountListComponent } from './components/account-list/account-list.component';
-import { ShopListComponent } from './components/shop-list/shop-list.component';
+
 import { appReducer } from './store/app.reducer';
 import { Effects } from './store/effects';
 
+import { SalesDashboardModule } from './sales-dashboard/sales-dashboard.module';
+import { SharedModule } from './shared/shared.module';
+
 @NgModule({
   declarations: [
-    AppComponent,
-    AccountListComponent,
-    ShopListComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    SalesDashboardModule,
+    SharedModule,
     StoreModule.forRoot(appReducer),
     EffectsModule.forRoot(Effects),
     StoreDevtoolsModule.instrument({

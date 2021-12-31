@@ -12,3 +12,7 @@ export const loadShopsSuccess = createAction('[Tiendas] Cargar Tiendas Ok',
 export const loadShopsError = createAction('[Tiendas] Cargar Tiendas Error',
   props<{ error: any }>()
 );
+
+export const updateShopSelected = createAction('[Tiendas] Actualizar tienda seleccionada',
+  props<{ selectedShop: number }>()
+);

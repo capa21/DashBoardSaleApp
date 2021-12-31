@@ -10,3 +10,7 @@ export const loadAccountsSuccess = createAction('[Cuentas] Cargar Cuentas Ok',
 export const loadAccountsError = createAction('[Cuentas] Cargar Cuentas Error',
   props<{ error: any }>()
 );
+
+export const updateAccountsSelected = createAction('[Cuentas] Actualizar cuenta seleccionada',
+  props<{ idSelected: number }>()
+);

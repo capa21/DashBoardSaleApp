@@ -1,17 +1,19 @@
 import { Action, createReducer, on } from "@ngrx/store";
+import { updateAccountsSelected } from "../actions";
 
-import { loadShops, loadShopsError, loadShopsSuccess } from "../actions/shops.action";
+import { loadShops, loadShopsError, loadShopsSuccess, updateShopSelected } from "../actions/shops.action";
 import { ShopsState } from "../models/shop.model";
 
 const initialState: ShopsState  = {
   shops: [],
+  idSelected: 0,
   loaded: false,
   loading: false,
   error: null
 }
 
 const _shopsReducer = createReducer(initialState,
-  on(loadShops, (state, {id_account}) => ({ ...state, loading: true })),
+  on(loadShops, (state) => ({ ...state, loading: true })),
   on(loadShopsSuccess, (state, { Shops }) => ({
     ...state,
     loading: false,
@@ -23,6 +25,10 @@ const _shopsReducer = createReducer(initialState,
     loading: false,
     loaded: false,
     error
+  })),
+  on(updateShopSelected, (state, { selectedShop }) => ({
+    ...state,
+    idSelected: selectedShop
   })),
 );
 

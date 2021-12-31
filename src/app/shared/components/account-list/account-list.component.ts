@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Store } from '@ngrx/store';
 import { Accounts } from 'src/app/models/account.model';
-import { loadAccounts } from 'src/app/store/actions';
+import { loadAccounts, updateAccountsSelected } from 'src/app/store/actions';
 import { loadShops } from 'src/app/store/actions/shops.action';
 import { AppState } from 'src/app/store/models/state.model';
 
@@ -30,6 +30,7 @@ export class AccountListComponent implements OnInit {
   }
 
   changeAccount() {
+    this.store.dispatch(updateAccountsSelected({ idSelected: Number(this.accountSelected.value)}))
     this.store.dispatch(loadShops({ id_account: Number(this.accountSelected.value) }));
   }
 
