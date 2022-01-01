@@ -1,5 +1,5 @@
 import { Action, createReducer, on } from "@ngrx/store";
-import { updateAccountsSelected } from "../actions";
+import { updateAccountSelected } from "../actions";
 
 import { loadShops, loadShopsError, loadShopsSuccess, updateShopSelected } from "../actions/shops.action";
 import { ShopsState } from "../models/shop.model";

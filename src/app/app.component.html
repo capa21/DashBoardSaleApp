@@ -1,15 +1,33 @@
-<div class="container text-center p-3">
-  <h1>Selecciona una cuenta y una tienda</h1>
-  <div class="container">
+<div class="container">
+  <header>
     <div class="row">
       <div class="col">
-        <yuju-account-list></yuju-account-list>
+        <div class="account">
+          <select class="form-control form-control-lg" aria-label="Default select example" (change)="changeAccount()"
+            [formControl]="selectAccount">
+            <option [value]="accounts.current.id_account" selected>{{accounts.current.name}}</option>
+            <option *ngFor="let account of accounts.others" [value]="account.id_account">{{account.name}}
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class="col">
+        <div class="shop">
+          <select class="form-control form-control-lg" aria-label="Default select example" [formControl]="selectShop"
+            (change)="changeShop()">
+            <option selected disabled>Seleciona tu tienda</option>
+            <option *ngFor="let shop of shops" [value]="shop.id_shop">{{shop.name}}</option>
+          </select>
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col">
-        <yuju-shop-list></yuju-shop-list>
-      </div>
+  </header>
+  <div class="row">
+    <div class="col">
+      <main>
+        <router-outlet></router-outlet>
+      </main>
     </div>
   </div>
 </div>
+

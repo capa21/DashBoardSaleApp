@@ -10,7 +10,7 @@ export class ShopService {
 
   constructor(private shopProxyService: ShopProxyService) { }
 
-  getShopsById(idAccount: number): Observable<Shop[]> {
+  getShopsByAccount(idAccount: number): Observable<Shop[]> {
     return this.shopProxyService.getShops()
       .pipe(
         map(data => data.filter((shop: Shop) => shop.id_account === idAccount))

@@ -14,7 +14,7 @@ export class ShopsEffect {
       ofType(loadShops),
       tap(data => console.log('effect tap: ', data)),
       mergeMap(
-        ( action ) => this.shopService.getShopsById(action.id_account).pipe(
+        ( action ) => this.shopService.getShopsByAccount(action.id_account).pipe(
           map(shops => loadShopsSuccess({ Shops: shops })),
           tap(data => console.log('Effect shops: ', data)),
           catchError( err => of(loadShopsError({error: err})))

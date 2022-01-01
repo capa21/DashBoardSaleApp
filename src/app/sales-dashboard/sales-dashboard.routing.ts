@@ -5,16 +5,7 @@ import { SalesDashboardComponent } from './components/page/sales-dashboard/sales
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/subaplicacion'
-  },
-  {
-    path: 'subaplicacion',
-    component:SalesDashboardComponent
-  },
-  {
-    path: '**',
-    redirectTo: 'subaplicacion',
-    pathMatch: 'full'
+    component: SalesDashboardComponent
   }
 ];
 

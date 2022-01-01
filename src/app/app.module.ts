@@ -17,19 +17,18 @@ import { appReducer } from './store/app.reducer';
 import { Effects } from './store/effects';
 
 import { SalesDashboardModule } from './sales-dashboard/sales-dashboard.module';
-import { SharedModule } from './shared/shared.module';
+import { WelcomeAccountComponent } from './components/welcome-account/welcome-account.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WelcomeAccountComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    SalesDashboardModule,
-    SharedModule,
     StoreModule.forRoot(appReducer),
     EffectsModule.forRoot(Effects),
     StoreDevtoolsModule.instrument({

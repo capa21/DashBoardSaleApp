@@ -12,7 +12,7 @@ import { PagesSalesNavigationComponent } from './components/main/pages-sales-nav
 import { SalesListComponent } from './components/main/sales-list/sales-list.component';
 import { SaleItemComponent } from './components/main/sale-item/sale-item.component';
 import { PagesSalesInformationComponent } from './components/footer/pages-sales-information/pages-sales-information.component';
-import { SharedModule } from '../shared/shared.module';
+import { SalesDashBoardRoutingModule } from './sales-dashboard.routing';
 
 
 @NgModule({
@@ -32,7 +32,7 @@ import { SharedModule } from '../shared/shared.module';
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SalesDashBoardRoutingModule
   ]
 })
 export class SalesDashboardModule { }
